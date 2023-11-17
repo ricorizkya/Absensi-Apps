@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.fragment.AbsenMasukFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_ket_masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat pagi! Anda belum absen masuk hari ini, tekan tombol dibawah ini untuk absen masuk dan selamat bekerja!"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Button
+            android:id="@+id/myButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Absen Masuk"
+            android:background="@color/teal_700"
+            android:elevation="4dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_ket_masuk" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
